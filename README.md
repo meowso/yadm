@@ -199,7 +199,6 @@ yadm altinstall
 
 ## Things to study next
 
-- licence
 - default i3 settings
 - default polybar settings
 - default rofi settings
