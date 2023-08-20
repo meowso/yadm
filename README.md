@@ -4,7 +4,7 @@
 > Yadm is a dotfile manager that allows users to easily manage their configuration files across multiple systems.
 > It is designed to be simple, fast, and flexible, and can be used to manage any type of configuration file, including shell scripts, text files, and more.
 
-![Background Image](./.config/background.jpg?raw=true "Background Image")
+![Background Image](./.config/background.jpg?raw=true 'Background Image')
 
 ## Table of Contents
 
@@ -12,18 +12,17 @@
 - [.gitconfig](./.gitconfig)
 - [.gitattributes](./.gitattributes)
 - [.zshrc](./.zshrc)
+- [iterm2 settings]()
 - [karabiner elements](.config/karabiner/karabiner.json)
 - [vscode settings](./Library/Application%20Support/Code/User/settings.json)
 - [vscode keybindings](./Library/application%20Support/Code/User/keybindings.json)
 - [editor config](./.editorconfig)
 - [.markdownlint](.config/.markdownlint.jsonc)
 - [chat gpt config](./.chatgpt/chat.conf.json)
+- [prettier config](./.prettierrc.json5)
 
--- default prettier
--- default vscode extensions
 -- default alacritty settings
 -- default tmux settings
--- default zsh settings
 -- default vim settings
 -- default git settings
 -- default bash settings
