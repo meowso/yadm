@@ -1,0 +1,116 @@
+{
+  // Workbench stuff
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Copilot Theme",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderFinalNewline": "dimmed",
+
+  // Git stuff
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.autorefresh": true,
+  "git.enableCommitSigning": true,
+
+  // Copilot stuff
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  // "editor.suggest.showKeywords": true,
+  "editor.suggest.showSnippets": false,
+  // "editor.suggest.showWords": true,
+  // "editor.suggest.showColors": true,
+  // "editor.suggest.showIcons": true,
+  // "editor.suggest.showClasses": true,
+  // "editor.suggest.showMethods": true,
+  // "editor.suggest.showFunctions": true,
+  // "editor.suggest.showVariables": true,
+  // "editor.suggest.showFields": true,
+  // "editor.suggest.showFiles": true,
+  // "editor.suggest.showReferences": true,
+  // "editor.suggest.showFolders": true,
+  // "editor.suggest.showTypeParameters": true,
+  // "editor.suggest.showModules": true,
+  // "editor.suggest.showProperties": true,
+  // "editor.suggest.showEvents": true,
+  // "editor.suggest.showOperators": true,
+  // "editor.suggest.showUnits": true,
+  // "editor.suggest.showValues": true,
+  // "editor.suggest.showConstants": true,
+  // "editor.suggest.showEnums": true,
+  // "editor.suggest.showEnumMembers": true,
+  // "editor.suggest.showStructs": true,
+  // "editor.suggest.showInterfaces": false,
+  // "editor.suggest.showUsers": true,
+  // "editor.suggest.showIssues": true,
+
+  // Prettier stuff
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Typescript stuff
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "cSpell.userWords": [
+    "autofetch",
+    "autorefresh",
+    "Brunnbachlweg",
+    "brunovop",
+    "dotfile",
+    "esbenp",
+    "karabiner",
+    "meowso",
+    "Meslo",
+    "openai's",
+    "Othechar",
+    "Parens",
+    "roleplay",
+    "Structs",
+    "Unterföhring",
+    "Varoni",
+    "yadm"
+  ],
+  "settingsSync.ignoredSettings": [],
+  "diffEditor.ignoreTrimWhitespace": false,
+  // "[markdown]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "git.openRepositoryInParentFolders": "always",
+  "playwright.showTrace": true,
+  "playwright.reuseBrowser": false,
+
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+},
+
+"editor.codeActionsOnSave": {
+  "source.fixAll.markdownlint": true
+}
+}
