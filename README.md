@@ -8,11 +8,14 @@
 
 ## Table of Contents
 
+### Quick links
+
 - [yadm](./.local/share/yadm/repo.git/config)
 - [.gitconfig](./.gitconfig)
 - [.gitattributes](./.gitattributes)
 - [.zshrc](./.zshrc)
-- [iterm2 settings]()
+- [iterm2 settings](./.config/com.googlecode.iterm2.plist)
+- [vim settings](./.vimrc)
 - [karabiner elements](.config/karabiner/karabiner.json)
 - [vscode settings](./Library/Application%20Support/Code/User/settings.json)
 - [vscode keybindings](./Library/application%20Support/Code/User/keybindings.json)
@@ -21,14 +24,8 @@
 - [chat gpt config](./.chatgpt/chat.conf.json)
 - [prettier config](./.prettierrc.json5)
 
--- default alacritty settings
--- default tmux settings
--- default vim settings
--- default git settings
--- default bash settings
--- default fish settings
--- default ranger settings
--- default kitty settings
+### Tools & Concepts
+
 -- default i3 settings
 -- default polybar settings
 -- default rofi settings
@@ -40,5 +37,3 @@
 -- default xsession settings
 -- default xbindkeys settings
 -- default xmodmap settings
-
-Personal config files
