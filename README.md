@@ -1,11 +1,14 @@
-# Meowso's environment
+<h1 align="center">Welcome to Meowso's Yadm dotfile config 📦🐈</h1>
 
-My personal config file
+> **What is yadm configuration?**
+Yadm is a dotfile manager that allows users to easily manage their configuration files across multiple systems.
+It is designed to be simple, fast, and flexible, and can be used to manage any type of configuration file, including shell scripts, text files, and more.
+
 ![Background Image](background.jpg?raw=true "Background Image")
 
-index
+ [.gitconfig](./.gitconfig)
+ [.gitattributes](./.gitattributes)
 
-## yadm configuration
 
 .local/share/yadm/repo.git/config
 
