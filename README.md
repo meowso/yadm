@@ -35,21 +35,21 @@
 
 ## Quick links
 
-- [yadm](./.local/share/yadm/repo.git/config)
-- [.gitconfig](./.gitconfig)
-- [.gitattributes](./.gitattributes)
-- [.zshrc](./.zshrc)
-- [.vimrc](./.vimrc)
-- [.editorconfig](./.editorconfig)
-- [.markdownlint](./.config/.markdownlint.jsonc)
-- [Brewfile](./Brewfile)
-- [iterm2 settings](./.config/com.googlecode.iterm2.plist)
-- [karabiner elements](.config/karabiner/karabiner.json)
-- [vscode settings](./Library/Application%20Support/Code/User/settings.json)
-- [vscode keybindings](./Library/application%20Support/Code/User/keybindings.json)
-- [chat gpt config](./.chatgpt/chat.conf.json)
-- [prettier config](./.prettierrc.json5)
-- [brave browser settings](./Library/Application%20Support/BraveSoftware/Brave-Browser/Default/Preferences)
+- [yadm](./.local/share/yadm/repo.git/config) > more info [yadm](#yadm)
+- [.gitconfig](./.gitconfig) > more info [.gitconfig](#gitconfig)
+- [.gitattributes](./.gitattributes) > more info [.gitattributes](#gitattributes)
+- [.zshrc](./.zshrc) > more info [.zshrc](#zshrc)
+- [.vimrc](./.vimrc) > more info [.vimrc](#vimrc)
+- [.editorconfig](./.editorconfig) > more info [.editorconfig](#editorconfig)
+- [.markdownlint](./.config/.markdownlint.jsonc) > more info [.markdownlint](#markdownlint)
+- [Brewfile](./Brewfile) > more info [Brewfile](#brewfile)
+- [iterm2 settings](./.config/com.googlecode.iterm2.plist) > more info [iterm2 settings](#iterm2-settings)
+- [karabiner elements](.config/karabiner/karabiner.json) > more info [karabiner elements](#karabiner-elements)
+- [vscode settings](./Library/Application%20Support/Code/User/settings.json) > more info [vscode settings](#vscode-settings)
+- [vscode keybindings](./Library/application%20Support/Code/User/keybindings.json) > more info [vscode keybindings](#vscode-keybindings)
+- [chat gpt config](./.chatgpt/chat.conf.json) > more info [chat gpt config](#chat-gpt-config)
+- [prettier config](./.prettierrc.json5) > more info [prettier config](#prettier-config)
+- [brave browser settings](./Library/Application%20Support/BraveSoftware/Brave-Browser/Default/Preferences) > more info [brave browser settings](#brave-browser-settings)
 
 ---
 
