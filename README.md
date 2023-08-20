@@ -1,20 +1,20 @@
 # <h1 align="center">Welcome to Meowso's Yadm dotfile config 📦🐈</h1>
 
 > **What is yadm configuration?**
-Yadm is a dotfile manager that allows users to easily manage their configuration files across multiple systems.
-It is designed to be simple, fast, and flexible, and can be used to manage any type of configuration file, including shell scripts, text files, and more.
+> Yadm is a dotfile manager that allows users to easily manage their configuration files across multiple systems.
+> It is designed to be simple, fast, and flexible, and can be used to manage any type of configuration file, including shell scripts, text files, and more.
 
 ![Background Image](./.config/background.jpg?raw=true "Background Image")
 
 ## 📝 Table of Contents
 
- [yadm](./.local/share/yadm/repo.git/config)
- [.gitconfig](./.gitconfig)
- [.gitattributes](./.gitattributes)
- [.markdownlint](.config/.markdownlint.jsonc)
- [karabiner elements](.config/karabiner/karabiner.json)
- [vscode settings](./Library/application\ support/Code/User/settings.json)
- [vscode keybindings](./Library/application\ support/Code/User/keybindings.json)
+- [yadm](./.local/share/yadm/repo.git/config)
+- [.gitconfig](./.gitconfig)
+- [.gitattributes](./.gitattributes)
+- [.markdownlint](.config/.markdownlint.jsonc)
+- [karabiner elements](.config/karabiner/karabiner.json)
+- [vscode settings](./Library/application%20support/Code/User/settings.json)
+- [vscode keybindings](./Library/application%20support/Code/User/keybindings.json)
 
 -- default prettier
 -- default md linter
