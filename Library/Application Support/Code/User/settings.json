@@ -4,7 +4,9 @@
     "autorefresh",
     "Brunnbachlweg",
     "brunovop",
+    "chatbots",
     "dotfile",
+    "dotfiles",
     "esbenp",
     "iterm",
     "karabiner",
@@ -18,6 +20,7 @@
     "Structs",
     "Unterföhring",
     "Varoni",
+    "vimrc",
     "yadm"
   ],
   "diffEditor.ignoreTrimWhitespace": false,
