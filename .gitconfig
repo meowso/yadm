@@ -1,0 +1,14 @@
+[user]
+	name = bruno palma
+	email = bruno.palma@xempus.com
+[pull]
+	rebase = false
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
