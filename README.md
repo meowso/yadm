@@ -1,4 +1,4 @@
-# <h1 align="center">Welcome to Meowso's Yadm dotfile config 📦🐈</h1>
+# <h1 align="center">Welcome to Meowso's yadm dotfile config 📦🐈</h1>
 
 > **What is yadm configuration?**
 > Yadm is a dotfile manager that allows users to easily manage their configuration files across multiple systems.
@@ -15,11 +15,12 @@
 - [karabiner elements](.config/karabiner/karabiner.json)
 - [vscode settings](./Library/Application%20Support/Code/User/settings.json)
 - [vscode keybindings](./Library/application%20Support/Code/User/keybindings.json)
+- [editor config](./.editorconfig)
 - [.markdownlint](.config/.markdownlint.jsonc)
+- [chat gpt config](./.chatgpt/chat.conf.json)
 
 -- default prettier
 -- default vscode extensions
-≤
 -- default alacritty settings
 -- default tmux settings
 -- default zsh settings
