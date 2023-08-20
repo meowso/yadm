@@ -1,23 +1,23 @@
-[core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	ignorecase = true
-	precomposeunicode = true
-	sharedrepository = 0600
-	worktree = /Users/bruno.palma
-[receive]
-	denyNonFastforwards = true
-[status]
-	showUntrackedFiles = no
-[yadm]
-	managed = true
-[remote "origin"]
-	url = git@github.com:meowso/yadm.git
-	fetch = +refs/heads/*:refs/remotes/origin/*
-[branch "main"]
-	remote = origin
-	merge = refs/heads/main
-[user]
-	email = meowso@pm.me
-	name = Meowso
+[core] # This section defines some core settings
+	repositoryformatversion = 0 # The format version of the repository
+	filemode = true # Preserve the file mode of files in the repository
+	bare = false # The repository is not bare (has a working tree)
+	ignorecase = true # Ignore case when matching files and directories
+	precomposeunicode = true # Re-compose unicode characters in filenames
+	sharedrepository = 0600 # The permissions of the repository files
+	worktree = /Users/bruno.palma # The path to the working tree
+[receive] # This section defines how to handle push requests
+	denyNonFastforwards = true # Reject non-fast-forward pushes
+[status] # This section defines how to show the status of the working tree
+	showUntrackedFiles = no # Do not show untracked files
+[yadm] # This section defines how to use Yet Another Dotfiles Manager (yadm)
+	managed = true # The repository is managed by yadm
+[remote "origin"] # This section defines the origin remote
+	url = git@github.com:meowso/yadm.git # The URL of the remote repository
+	fetch = +refs/heads/*:refs/remotes/origin/* # The refspec for fetching from the remote
+[branch "main"] # This section defines the main branch
+	remote = origin # The name of the remote for the branch
+	merge = refs/heads/main # The refspec for merging from the remote branch
+[user] # This section defines the user's name and email
+	email = meowso@pm.me # The user's email address
+	name = Meowso # The user's name

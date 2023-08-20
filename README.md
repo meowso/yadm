@@ -11,18 +11,15 @@
 - [yadm](./.local/share/yadm/repo.git/config)
 - [.gitconfig](./.gitconfig)
 - [.gitattributes](./.gitattributes)
-- [.markdownlint](.config/.markdownlint.jsonc)
+- [.zshrc](./.zshrc)
 - [karabiner elements](.config/karabiner/karabiner.json)
-- [vscode settings](./Library/application%20support/Code/User/settings.json)
-- [vscode keybindings](./Library/application%20support/Code/User/keybindings.json)
+- [vscode settings](./Library/Application%20Support/Code/User/settings.json)
+- [vscode keybindings](./Library/application%20Support/Code/User/keybindings.json)
+- [.markdownlint](.config/.markdownlint.jsonc)
 
 -- default prettier
--- default md linter
--- default vscode user settings
--- default vscode keybindings
 -- default vscode extensions
 ≤
--- default karabiner settings
 -- default alacritty settings
 -- default tmux settings
 -- default zsh settings

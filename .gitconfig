@@ -1,17 +1,17 @@
-[user]
-	name = bruno palma
-	email = bruno.palma@xempus.com
-	signingkey = BFEC9AEA79861BFE097DD72D01DF60227F868E06
-[pull]
-	rebase = false
-[gpg]
-	program = /opt/homebrew/bin/gpg
-[commit]
-	gpgsign = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[core]
-	autocrlf = input
+[user] # defines the user's name, email and signing key
+	name = bruno palma # The user's name
+	email = bruno.palma@xempus.com # The user's email address
+	signingkey = BFEC9AEA79861BFE097DD72D01DF60227F868E06 # The user's GPG signing key
+[pull] # defines how to handle pull requests
+	rebase = false # Do not rebase the commits when pulling
+[gpg] # defines the GPG program and settings
+	program = /opt/homebrew/bin/gpg # The path to the GPG program
+[commit] # defines how to sign commits
+	gpgsign = true # Sign every commit with the user's signing key
+[filter "lfs"] # defines how to use Git Large File Storage (LFS)
+	clean = git-lfs clean -- %f # Use git-lfs to clean large files before committing
+	smudge = git-lfs smudge -- %f # Use git-lfs to restore large files after checking out
+	process = git-lfs filter-process # Use git-lfs to filter large files during operations
+	required = true # Require git-lfs for this repository
+[core] # defines some core settings
+	autocrlf = input # Convert CRLF line endings to LF on input
