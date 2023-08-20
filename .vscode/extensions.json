@@ -1,0 +1,35 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+  "recommendations": [
+    "amatiasq.sort-imports", // Sorts ES6 imports automatically on save [^1^][1]
+    "benjaminbenais.copilot-theme", // A dark theme inspired by GitHub Copilot
+    "bierner.folder-source-actions", // Adds commands to the Explorer context menu for opening a folder in a new window or new instance
+    "chakrounanas.turbo-console-log", // Adds a command for inserting console.log statements with a keyboard shortcut
+    "davidanson.vscode-markdownlint", // Provides linting and style checking for Markdown files [^2^][2]
+    "dbaeumer.vscode-eslint", // Integrates ESLint, a tool for identifying and reporting on patterns in JavaScript [^3^][3]
+    "eamodio.gitlens", // Adds GitLens, a tool for exploring Git repositories
+    "editorconfig.editorconfig", // Supports EditorConfig, a file format for defining coding styles
+    "esbenp.prettier-vscode", // Formats code using Prettier, an opinionated code formatter
+    "github.copilot", // Adds GitHub Copilot, an AI pair programmer
+    "gruntfuggly.todo-tree", // Shows TODO, FIXME and other annotations in a tree view
+    "gruntfuggly.todo-tree", // Shows TODO, FIXME and other annotations in a tree view
+    "ivory-lab.jenkinsfile-support", // Adds syntax highlighting and snippets for Jenkinsfile
+    "mechatroner.rainbow-csv", // Adds syntax highlighting for CSV files
+    "ms-azuretools.vscode-docker", // Makes it easy to build, manage and deploy containerized applications from VS Code
+    "ms-playwright.playwright", // Enables writing end-to-end tests using Playwright, a cross-browser automation library
+    "oderwat.indent-rainbow", // Colors indentation levels of code
+    "pflannery.vscode-versionlens", // Shows the latest version information for npm, Bower, jspm and Dub dependencies
+    "pomber.git-file-history", // Shows the Git history of the current file in a browser
+    "streetsidesoftware.code-spell-checker-german", // Adds German language support to Code Spell Checker extension
+    "streetsidesoftware.code-spell-checker", // Checks spelling in code comments and strings
+    "stylelint.vscode-stylelint", // Integrates stylelint, a tool for identifying and reporting on patterns in CSS, SCSS and Less
+    "tomoki1207.pdf", // Displays PDF files in VS Code
+    "vscode-icons-team.vscode-icons", // Adds icons for files and folders in VS Code
+    "vscode-icons-team.vscode-icons", // Adds icons for files and folders in VS Code
+    "wayou.vscode-todo-highlight", // Highlights TODO, FIXME and other keywords in your code
+    "yoavbls.pretty-ts-errors", // Makes TypeScript errors more readable and less verbose
+    "yzhang.markdown-all-in-one" // Adds keyboard shortcuts, table of contents, auto preview and more to Markdown files
+  ]
+}
