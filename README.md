@@ -6,7 +6,7 @@
 
 ![Background Image](./.config/background.jpg?raw=true "Background Image")
 
-## 📝 Table of Contents
+## Table of Contents
 
 - [yadm](./.local/share/yadm/repo.git/config)
 - [.gitconfig](./.gitconfig)
