@@ -1,10 +1,11 @@
 [user]
 	name = bruno palma
 	email = bruno.palma@xempus.com
+	signingkey = BFEC9AEA79861BFE097DD72D01DF60227F868E06
 [pull]
 	rebase = false
 [gpg]
-	program = gpg
+	program = /opt/homebrew/bin/gpg
 [commit]
 	gpgsign = true
 [filter "lfs"]
