@@ -16,6 +16,7 @@
     - [.vimrc](#vimrc)
     - [.editorconfig](#editorconfig)
     - [.markdownlint](#markdownlint)
+    - [Brewfile](#brewfile)
     - [iterm2 settings](#iterm2-settings)
     - [karabiner elements](#karabiner-elements)
     - [vscode settings](#vscode-settings)
@@ -23,6 +24,11 @@
     - [chat gpt config](#chat-gpt-config)
     - [prettier config](#prettier-config)
     - [brave browser settings](#brave-browser-settings)
+  - [Installation](#installation)
+    - [Install yadm](#install-yadm)
+    - [Clone the repository](#clone-the-repository)
+    - [Install the dotfiles](#install-the-dotfiles)
+    - [Install the packages](#install-the-packages)
   - [Things to study next](#things-to-study-next)
 
 ---
@@ -36,6 +42,7 @@
 - [.vimrc](./.vimrc)
 - [.editorconfig](./.editorconfig)
 - [.markdownlint](./.config/.markdownlint.jsonc)
+- [Brewfile](./Brewfile)
 - [iterm2 settings](./.config/com.googlecode.iterm2.plist)
 - [karabiner elements](.config/karabiner/karabiner.json)
 - [vscode settings](./Library/Application%20Support/Code/User/settings.json)
@@ -94,6 +101,14 @@ The file `.config/.markdownlint.jsonc` contains the configuration for markdownli
 I use it to improve the quality and readability of my markdown documents.
 My markdownlint file can be found at here [markdownlint](./.config/.markdownlint.jsonc).
 
+### Brewfile
+
+[Brewfile](./Brewfile) is a text file that lists the packages and applications managed by Homebrew.
+Homebrew is a package manager for macOS that makes it easy to install, update, and manage software packages from the command line.
+I use Brewfile to keep track of my preferred software installations and quickly set up a new environment or restore my existing setup.
+The Brewfile contains a collection of taps, formulas, casks, and application install commands. These entries define various software and tools I want to have on my system.
+My Brewfile can be found here: [Brewfile](./Brewfile).
+
 ### iterm2 settings
 
 [iTerm2](https://iterm2.com/) is a terminal emulator for macOS that offers many features and enhancements over the default Terminal app.
@@ -145,8 +160,46 @@ It blocks ads and trackers, rewards users with cryptocurrency, and supports dece
 The file `Library/Application Support/BraveSoftware/Brave-Browser/Default/Preferences` contains the settings for Brave, such as the homepage, the extensions, and the appearance.
 I use it to customize my browsing experience and protect my online privacy
 
+## Installation
+
+### Install yadm
+
+To install yadm on MacOs, run the following command:
+To install yadm on other platforms, see the [yadm documentation](https://yadm.io/docs/install).
+
+```bash
+brew install yadm
+```
+
+Then clone the repository and bootstrap the dotfiles:
+
+### Clone the repository
+
+```bash
+yadm clone https://github.com/meowso/yadm.git
+```
+
+Bootstrap the dotfiles:
+
+### Install the dotfiles
+
+```bash
+yadm bootstrap
+```
+
+<!-- TODO: prepare the bootstrap file -->
+
+Install the packages:
+
+### Install the packages
+
+```bash
+yadm altinstall
+```
+
 ## Things to study next
 
+- licence
 - default i3 settings
 - default polybar settings
 - default rofi settings
@@ -158,6 +211,3 @@ I use it to customize my browsing experience and protect my online privacy
 - default xsession settings
 - default xbindkeys settings
 - default xmodmap settings
-<!-- TODO:
-- chrome settings
-- yadm install script -->
