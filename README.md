@@ -24,11 +24,10 @@
     - [chat gpt config](#chat-gpt-config)
     - [prettier config](#prettier-config)
     - [brave browser settings](#brave-browser-settings)
-  - [Installation](#installation)
-    - [Install yadm](#install-yadm)
-    - [Clone the repository](#clone-the-repository)
-    - [Install the dotfiles](#install-the-dotfiles)
-    - [Install the packages](#install-the-packages)
+  - [Installing yadm and Meowso's configuration](#installing-yadm-and-meowsos-configuration)
+    - [Introduction](#introduction)
+    - [Prerequisites](#prerequisites)
+    - [Installations](#installations)
   - [Things to study next](#things-to-study-next)
 
 ---
@@ -156,49 +155,169 @@ My prettier config file can be found at here [prettier](./.prettierrc.json5).
 
 [Brave](https://brave.com/) is a web browser that focuses on privacy and performance
 
-It blocks ads and trackers, rewards users with cryptocurrency, and supports decentralized applications.
+It blocks ads and trackers, rewards users with cryptocurrency, and supports decentralized applications
 The file `Library/Application Support/BraveSoftware/Brave-Browser/Default/Preferences` contains the settings for Brave, such as the homepage, the extensions, and the appearance.
 I use it to customize my browsing experience and protect my online privacy
 
-## Installation
+---
 
-### Install yadm
+## Installing yadm and Meowso's configuration
 
-To install yadm on MacOs, run the following command:
-To install yadm on other platforms, see the [yadm documentation](https://yadm.io/docs/install).
+### Introduction
+
+yadm is a dotfiles manager that helps you manage your configuration files across multiple machines
+
+It works with any type of file in your home directory, and supports encryption, alternate files, and bootstrap scripts.
+
+With yadm, you can easily keep your dotfiles in sync, back them up, and restore them when needed. yadm is designed for users who are comfortable with git and the command line.
+
+### Prerequisites
+
+To install yadm, you need to have a Unix-like operating system, such as Linux, macOS, or BSD
+
+You also need to have git installed and configured on your system.
+
+You may need to install some additional tools for encryption and alternate files, such as gpg, coreutils, or perl.
+
+You should have write access to your home directory and the ability to execute scripts.
+
+### Installations
+
+There are several ways to install yadm on your system. You can use your package manager, if it supports yadm. For example, on Debian or Ubuntu, you can run:
+
+```bash
+sudo apt install yadm
+```
+
+On macOS, you can use Homebrew:
 
 ```bash
 brew install yadm
 ```
 
-Then clone the repository and bootstrap the dotfiles:
-
-### Clone the repository
+Alternatively, you can clone the yadm repository from GitHub and run the install script:
 
 ```bash
-yadm clone https://github.com/meowso/yadm.git
+git clone https://github.com/TheLocehiliosan/yadm.git
+cd yadm
+./install
 ```
 
-Bootstrap the dotfiles:
-
-### Install the dotfiles
+Or, you can use the curl script provided by the project:
 
 ```bash
-yadm bootstrap
+curl -fsSL https://yadm.io/install | bash
 ```
 
-<!-- TODO: prepare the bootstrap file -->
+This will download and install yadm in your `$HOME/.local/bin` directory. You may need to add this directory to your `$PATH` variable.
 
-Install the packages:
-
-### Install the packages
+- Configuration: After installing yadm, you need to initialize your dotfiles repository.
+- You can either create a new one or clone an existing one from a remote source. To create a new repository, run:
 
 ```bash
-yadm altinstall
+yadm init
 ```
+
+This will create a `.yadm` directory in your home directory and initialize a git repository there.
+You can then add any files or directories you want to manage with yadm using the `yadm add` command. For example:
+
+```bash
+yadm add .bashrc .vimrc .config
+```
+
+To clone an existing repository, run:
+
+```bash
+yadm clone <url>
+```
+
+This will clone the repository from the given URL and link the files in your home directory.
+You can use any URL that git supports, such as HTTPS, SSH, or Git.
+
+If you have any files that contain sensitive information, such as passwords or keys, you can encrypt them with yadm using the `yadm encrypt` command.
+This will create a `.yadm/encrypt` file that contains the encrypted data and a `.yadm/encrypt.lock` file that lists the original files.
+You can then add these files to your repository and ignore the original ones. For example:
+
+```bash
+yadm encrypt .ssh/id_rsa .netrc
+yadm add .yadm/encrypt*
+echo '*.lock' >> .yadm/gitignore
+```
+
+To decrypt the files, use the `yadm decrypt` command.
+
+If you have any files that vary depending on the machine or environment you are using, you can use alternate files with yadm.
+These are files that have a special suffix that indicates when they should be used. For example:
+
+```bash
+.config/nvim/init.vim##os.Darwin
+.config/nvim/init.vim##os.Linux
+```
+
+These are two versions of the same file for macOS and Linux respectively. When you run `yadm alt`, yadm will link the appropriate file based on the current operating system.
+You can use any criteria that yadm supports, such as hostname, class, or architecture.
+
+If you have any scripts that you want to run after cloning or updating your repository, you can use bootstrap scripts with yadm.
+These are executable files that have a special name: `.yadm/bootstrap`. You can have multiple bootstrap scripts for different criteria, such as:
+
+```bash
+.yadm/bootstrap##os.Darwin
+.yadm/bootstrap##class.workstation
+```
+
+These are two bootstrap scripts for macOS and workstation machines respectively. When you run `yadm bootstrap`, yadm will execute the matching scripts in alphabetical order.
+
+To sync your dotfiles with a remote source, you can use the standard git commands with yadm, such as `yadm push`, `yadm pull`, or `yadm fetch`.
+You can also use `yadm update` to pull and update your dotfiles in one command.
+
+Sure, I can continue with the Usage section. Here it is:
+
+- Usage: To use yadm, you can run any git command with the `yadm` prefix. For example, to check the status of your dotfiles, run:
+
+```bash
+yadm status
+```
+
+To see the differences between your local and remote files, run:
+
+```bash
+yadm diff
+```
+
+To commit your changes, run:
+
+```bash
+yadm commit -m "message"
+```
+
+To push your changes to the remote, run:
+
+```bash
+yadm push
+```
+
+To pull the changes from the remote, run:
+
+```bash
+yadm pull
+```
+
+To update your dotfiles from the remote and apply any alternate files or bootstrap scripts, run:
+
+```bash
+yadm update
+```
+
+For more information and examples, you can check the yadm documentation at <https://yadm.io/docs/overview> or run `yadm help`.
+
+---
 
 ## Things to study next
 
+- TypeIt4me settings
+- alfred settings
+- apptivate settings
+- uBar settings
 - default i3 settings
 - default polybar settings
 - default rofi settings
